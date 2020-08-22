@@ -2,11 +2,13 @@ doctype html
 html
   head
     title This is home
+    style.
+      .menu-link{
+        padding: 1rem 2rem;
+      }
   body
     //- include menu
-    .menu
-      a.menu-link(href="/extends") home
+    include menu
     block unique-content
     //- include footer
-    footer
-      p &copy; 2020
+    include footer
