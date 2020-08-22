@@ -1,14 +1,13 @@
 doctype html
 html
+  block config
   head
-    title This is home
+    title=title
     style.
       .menu-link{
         padding: 1rem 2rem;
       }
   body
-    //- include menu
     include menu
     block unique-content
-    //- include footer
     include footer
